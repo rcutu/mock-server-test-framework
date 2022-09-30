@@ -1,0 +1,2 @@
+BASE_URI = 'http://metadata-server-mock.herokuapp.com/metadata/2048c7e09308f9138cef8f1a81733b72e601d016eea5eef759ff2933416d617a696e67436f696e'
+known_properties =["name", "description", "ticker", "logo", "url", "unit"]
