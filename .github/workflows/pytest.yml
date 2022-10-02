@@ -1,6 +1,9 @@
 # .github/workflows/pytest.yaml
 name: PyTest
 on: push
+  schedule:
+      -cron: '22 21 * * *'
+
 
 jobs:
   test:
@@ -8,7 +11,7 @@ jobs:
     timeout-minutes: 10
 
     steps:
-      - name: Check out mock service calls
+      - name: Check out repository code
         uses: actions/checkout@v2
 
       # Setup Python (faster than using Python container)
