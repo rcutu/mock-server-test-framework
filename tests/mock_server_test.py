@@ -48,7 +48,8 @@ def test_query_output_against_read_for_both_subjects():
         assert_that(first_subject_response.status_code).is_equal_to(requests.codes.ok)
         assert_that(second_subject_response.status_code).is_equal_to(requests.codes.ok)
         assert compare(response_by_query.as_dict["subjects"],
-                       [first_subject_response.as_dict, second_subject_response.as_dict]), "The two lists are not the same"
+                       [first_subject_response.as_dict,
+                        second_subject_response.as_dict]), "The two lists are not the same"
 
 
 def test_specific_metadata_for_subject_against_query():
