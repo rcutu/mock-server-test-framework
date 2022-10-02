@@ -1,8 +1,8 @@
 # .github/workflows/pytest.yaml
 name: PyTest
-on: push
+on:
   schedule:
-      - cron: '25 21 * * *'
+      - cron: '26 21 * * *'
 
 
 jobs:
