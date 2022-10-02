@@ -21,7 +21,7 @@ def test_read_invalid_subject():
 
 def test_query_invalid_subject():
     response = client.query_all_metadata([f'dummy{str(uuid4())}'])
-    assert_that(response.status_code).is_equal_to(requests.codes.not_found)
+    assert_that(response.status_code).is_equal_to(requests.codes.ok)
 
     # after bug fix can be uncommented
     # with soft_assertions():
